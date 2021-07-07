@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include site-header.html %}
+
+<main class="main  container">
+
+  <div class="content">
+      <div class="author-info">
+          <div class="author-avatar">
+            <img style="max-width: 175px;
+            border-radius: 50%;" src="{{ site.avatar }}" alt="{{ site.avatar }}">
+          </div>
+          {{ content }}
+      </div>
+      {% include site-form.html %}
+      {% include nav-social.html %}
+  </div>
+  
+</main>
+
+{% include site-footer.html %}
